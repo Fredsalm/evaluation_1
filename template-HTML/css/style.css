@@ -1,27 +1,80 @@
+body{
+	background-color: #dee8d5;
+	margin-bottom: 2em;
+	color: #474350;
+	font-family: 'Dancing Script', cursive;
+}
 .title{
-	border: solid 1px;
-	font-size: 30pt;
-	background-color: #eee;
+	background-color: #b2ffa8;
 	margin-bottom: 1em;
 	margin-top: 1em;
+	box-shadow: 0 6px 3px #777;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 3em;
+	
+
 }
 
 .result{
-	border: solid 1px;
+	background-color: #b2ffa8;
 	margin-bottom: 1em;
-
+	box-shadow: 0 6px 3px #777;
+	font-size: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .result-text{
+	background-color: #b2ffa8;
 	margin-bottom: 1em;
-	border: solid 1px;
 	padding-top: 1em;
+	box-shadow: 0 6px 3px #777;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 1.5em;
+	
 }
 
 .spending{
-	border: solid 1px;
+	font-size: 1.5em;
+	background-color: #b2ffa8;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	box-shadow: 0 6px 3px #777;
 }
 
 .income{
-	border: solid 1px;
+	font-size: 1.5em;
+	background-color: #b2ffa8;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	box-shadow: 0 6px 3px #777;
+	
 }
+
+.add-spending{
+	background-color: #e9fae3;
+	box-shadow: 0 6px 3px #777;
+	padding: 1em;
+}
+
+.add-income{
+	background-color: #e9fae3;
+	box-shadow: 0 6px 3px #777;
+	padding: 1em;
+}
+
+label{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1.2em;
+}
+
+input{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+ span{
+ 	font-size: 1.5em;
+ }

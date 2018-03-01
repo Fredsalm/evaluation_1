@@ -4,21 +4,20 @@
 	<meta charset="utf-8">
 	<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no" >
 	<link href="css/bootstrap.min.css" rel="stylesheet" >
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>eval-1</title>
 </head>
 <body>
-	<script src="node_modules/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="app/app.js"></script>
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center font-weight-bold title">Mon Budget</div>
+			<div class="col-12 text-center title">Mon Budget</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row result">
-			<div class="col-6 text-uppercase text-center">
+			<div class="col-6 text-uppercase text-center ">
 				Resultat:
 				<input type="" name="résultat">
 			</div>
@@ -31,7 +30,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center result-text">
-				<p>Il vous reste 130€< se mois-ci</p>
+				<p>Il vous reste 130€ ce mois-ci</p>
 				<p>Idée: Allez manger au restaurant ;)</p>
 			</div>
 		</div>
@@ -40,15 +39,149 @@
 		<div class="row">
 			<div class="col text-center text-uppercase spending">
 				Dépenses:
-				<input type="" name="dépenses">
+				<span class="spending-reslt"></span>
 			</div>
 			<div class="col-1"></div>
 			<div class="col text-center text-uppercase income">
 				recettes:
-				<input type="" name="recettes">
+				<span type="" name="recettes"></span>
 			</div>
 		</div>
 	</div>
- <!--  <input type="reset" name="reset" value="Effacer" /> -->
+	<div class="container">
+			<form class="row">
+				<div class="col add-spending">
+
+					<div class="row">
+						<span class= "col-11 font-weight-bold ">Dépenses fixes:</span>
+						<button class=" align-self-end">+</button><br>
+					</div>
+
+					<div class="row">
+					<label class="col">-Loyer:</label>
+					<input type="text" name="rent" class="rent align-self-end col-3">€<br>
+					</div>
+
+					<div class="row">					
+						<label class="col">-Remboursement crédit:</label>
+						<input type="text" name="credit" class="credit col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Eau:</label>
+						<input type="text" name="wather" class="wather col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Electricité:</label>
+						<input type="text" name="electricity" class="electricity col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Gaz:</label>
+						<input type="text" name="gas" class="gas col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Téléphone:</label>
+						<input type="text" name="phone" class="phone col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Internet:</label>
+						<input type="text" name="internet" class="internet col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Assurance habitation:</label>
+						<input type="text" name="insurance-house" class="insurance-house col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Assurance véhicules:</label>
+						<input type="text" name="insurance-car" class="insurance-car col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Mutuelle santé:</label>
+						<input type="text" name="mutual" class="mutual col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Impôts sur le revenu:</label>
+						<input type="text" name="taxes" class="col-3">€<br>
+					</div>
+
+					<div class="row">
+						<label class="col">-Impôts locaux:</label>
+						<input type="text" name="taxes-land" class="taxes-land col-3">€<br>
+					</div>
+
+					<div class="row">
+						<span class= " col-11 font-weight-bold">Dépenses courantes:</span>
+						<button class=" clo-1 align-self-end">+</button><br>
+					</div>
+					<div class="row">
+						<label class="col">-Courses de la semaine:</label>
+						<input type="text" name="food" class="food col-3">€<br>
+					</div>
+					<div class="row">
+						<label class="col">-Essence:</label>
+						<input type="text" name="gasoline" class="gasoline col-3">€<br>
+					</div>
+					<div class="row">
+						<label class="col">-Transport:</label>
+						<input type="text" name="transport" class="transport col-3">€<br>
+					</div>
+
+					<div class="row">
+						<span class= " col-11 font-weight-bold">Dépenses occasionnelles:</span>
+						<button class=" align-self-end">+</button><br>
+					</div>
+					<div class="row">
+						<label class="col">-Restaurant:</label>
+						<input type="text" name="restaurant" class="restaurant col-3">€<br>
+					</div>
+					<div class="row">
+						<label class="col">-Sortie:</label>
+						<input type="text" name="fun" class="fun col-3">€<br>
+					</div>
+
+				</div>
+				<div class="col-1"></div>
+				<div class="col add-income">
+
+					<div class="row">
+						<span class= " col-11 font-weight-bold">Recettes mensuelle:</span>
+						<button class=" align-self-end">+</button><br>
+					</div>	
+					<div class="row">
+						<label class="col">-Salaires:</label>
+						<input type="text" name="wages" class="wages col-3">€<br>
+					</div>
+					<div class="row">
+						<label class="col">-Aides:</label>
+						<input type="text" name="aids" class="aids col-3">€<br>
+					</div>
+					<div class="row">
+						<label class="col">-Autres:</label>
+						<input type="text" class="other col-3" name="other">€<br>
+					</div>
+
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col text-center ">
+							<button class="valid btn-primary" id="valid" >Valider</button>
+							<input type="reset" name="reset" value="Effacer" />
+						</div>
+					</div>
+				</div>
+		
+			</form>
+	</div>
+ 
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
 </body>
 </html>
