@@ -1,0 +1,27 @@
+.title{
+	border: solid 1px;
+	font-size: 30pt;
+	background-color: #eee;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.result{
+	border: solid 1px;
+	margin-bottom: 1em;
+
+}
+
+.result-text{
+	margin-bottom: 1em;
+	border: solid 1px;
+	padding-top: 1em;
+}
+
+.spending{
+	border: solid 1px;
+}
+
+.income{
+	border: solid 1px;
+}
