@@ -10,11 +10,13 @@
 	<title>eval-1</title>
 </head>
 <body>
+	<!-- tilte -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center title">Mon Budget</div>
 		</div>
 	</div>
+	<!-- result + saving -->
 	<div class="container">
 		<div class="row result">
 			<div class="col-6 text-uppercase text-center ">
@@ -27,6 +29,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- phrases + idies -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center result-text">
@@ -35,6 +38,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col text-center text-uppercase spending">
@@ -48,131 +52,137 @@
 			</div>
 		</div>
 	</div>
+	<!-- start form spending -->
 	<div class="container">
 			<form class="row">
 				<div class="col add-spending">
 
 					<div class="row">
 						<span class= "col-11 font-weight-bold ">Dépenses fixes:</span>
-						<button class=" align-self-end">+</button><br>
+						<button class=" button-add--spending align-self-end">+</button><br>
 					</div>
 
 					<div class="row">
 					<label class="col">-Loyer:</label>
-					<input value="0" type="text" name="rent" class="rent align-self-end col-3">€<br>
+					<input value="0" type="text" name="rent" class="general-spending rent align-self-end col-3">€<br>
 					</div>
 
 					<div class="row">					
 						<label class="col">-Remboursement crédit:</label>
-						<input value="0" type="text" name="credit" class="credit col-3">€<br>
+						<input value="0" type="text" name="credit" class="general-spending credit col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Eau:</label>
-						<input value="0" type="text" name="wather" class="wather col-3">€<br>
+						<input value="0" type="text" name="wather" class="general-spending wather col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Electricité:</label>
-						<input value="0" type="text" name="electricity" class="electricity col-3">€<br>
+						<input value="0" type="text" name="electricity" class="general-spending electricity col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Gaz:</label>
-						<input value="0" type="text" name="gas" class="gas col-3">€<br>
+						<input value="0" type="text" name="gas" class="general-spending gas col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Téléphone:</label>
-						<input value="0" type="text" name="phone" class="phone col-3">€<br>
+						<input value="0" type="text" name="phone" class="general-spending phone col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Internet:</label>
-						<input value="0" type="text" name="internet" class="internet col-3">€<br>
+						<input value="0" type="text" name="internet" class="general-spending internet col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Assurance habitation:</label>
-						<input value="0" type="text" name="insurance-house" class="insurance-house col-3">€<br>
+						<input value="0" type="text" name="insurance-house" class="general-spending insurance-house col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Assurance véhicules:</label>
-						<input value="0" type="text" name="insurance-car" class="insurance-car col-3">€<br>
+						<input value="0" type="text" name="insurance-car" class="general-spending insurance-car col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Mutuelle santé:</label>
-						<input value="0" type="text" name="mutual" class="mutual col-3">€<br>
+						<input value="0" type="text" name="mutual" class="general-spending mutual col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Impôts sur le revenu:</label>
-						<input value="0" type="text" name="taxes" class=" taxes col-3">€<br>
+						<input value="0" type="text" name="taxes" class="general-spending taxes col-3">€<br>
 					</div>
 
 					<div class="row">
 						<label class="col">-Impôts locaux:</label>
-						<input value="0" type="text" name="taxes-land" class="taxes-land col-3">€<br>
+						<input value="0" type="text" name="taxes-land" class="general-spending taxes-land col-3">€<br>
 					</div>
 
 					<div class="row">
 						<span class= " col-11 font-weight-bold">Dépenses courantes:</span>
-						<button class=" clo-1 align-self-end">+</button><br>
+						<button class=" button-add--spending clo-1 align-self-end">+</button><br>
 					</div>
 					<div class="row">
 						<label class="col">-Courses de la semaine:</label>
-						<input value="0" type="text" name="food" class="food col-3">€<br>
+						<input value="0" type="text" name="food" class="general-spending food col-3">€<br>
 					</div>
 					<div class="row">
 						<label class="col">-Essence:</label>
-						<input value="0" type="text" name="gasoline" class="gasoline col-3">€<br>
+						<input value="0" type="text" name="gasoline" class="general-spending gasoline col-3">€<br>
 					</div>
 					<div class="row">
 						<label class="col">-Transport:</label>
-						<input value="0" type="text" name="transport" class="transport col-3">€<br>
+						<input value="0" type="text" name="transport" class="general-spending transport col-3">€<br>
 					</div>
-
+					<div class="row">
+						<label class="col">-Sport du mioche "annuel":</label>
+						<input value="0" type="text" name="sport" class="general-spending sport col-3">€<br>
+					</div>
 					<div class="row">
 						<span class= " col-11 font-weight-bold">Dépenses occasionnelles:</span>
-						<button class=" align-self-end">+</button><br>
+						<button class=" button-add--spending align-self-end">+</button><br>
 					</div>
 					<div class="row">
 						<label class="col">-Restaurant:</label>
-						<input value="0" type="text" name="restaurant" class="restaurant col-3">€<br>
+						<input value="0" type="text" name="restaurant" class="general-spending restaurant col-3">€<br>
 					</div>
 					<div class="row">
 						<label class="col">-Sortie:</label>
-						<input value="0" type="text" name="fun" class="fun col-3">€<br>
+						<input value="0" type="text" name="fun" class="general-spending fun col-3">€<br>
 					</div>
 
 				</div>
+				<!-- start form income  -->
 				<div class="col-1"></div>
 				<div class="col add-income">
 
 					<div class="row">
 						<span class= " col-11 font-weight-bold">Recettes mensuelle:</span>
-						<button class=" align-self-end">+</button><br>
+						<button class=" button-add--income align-self-end">+</button><br>
 					</div>	
 					<div class="row">
 						<label class="col">-Salaires:</label>
-						<input value="0" type="text" name="wages" class="wages col-3">€<br>
+						<input value="0" type="text" name="wages" class="general-income wages col-3">€<br>
 					</div>
 					<div class="row">
 						<label class="col">-Aides:</label>
-						<input value="0" type="text" name="aids" class="aids col-3">€<br>
+						<input value="0" type="text" name="aids" class="general-income aids col-3">€<br>
 					</div>
 					<div class="row">
 						<label class="col">-Autres:</label>
-						<input value="0" type="text" class="other col-3" name="other">€<br>
+						<input value="0" type="text" class="general-income other col-3" name="other">€<br>
 					</div>
 
 				</div>
+				<!-- button -->
 				<div class="container">
 					<div class="row">
 						<div class="col d-flex justify-content-around ">
-							<button class="valid btn btn-success btn-lg" id="valid" >Valider</button>
+							<input  class="valid btn btn-success btn-lg" id="valid" name="Valider" value="Valider"></input>
 							<input  class="reset btn btn-secondary btn-lg" type="reset" name="reset" value="Effacer" />
 						</div>
 					</div>

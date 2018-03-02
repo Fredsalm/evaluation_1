@@ -82,6 +82,15 @@ input{
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
- span{
+span{
  	font-size: 1.5em;
  }
+button{
+	font-size: 1.5em;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.obligatory{
+	color: red;
+}
